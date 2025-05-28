@@ -22,3 +22,9 @@ MORSE_CODE_DICT = {
 
 # Reverse dictionary for decoding
 MORSE_CODE_REVERSE = {v: k for k, v in MORSE_CODE_DICT.items()}
+
+def lettersToMorseCode(text: str) -> str:
+    """
+    Converts plain text into Morse code.
+    """
+    return ' '.join(MORSE_CODE_DICT.get(char.upper(), '') for char in text)
