@@ -28,3 +28,12 @@ def lettersToMorseCode(text: str) -> str:
     Converts plain text into Morse code.
     """
     return ' '.join(MORSE_CODE_DICT.get(char.upper(), '') for char in text)
+
+def morseCodeToLetters(code: str) -> str:
+    """
+    Converts Morse code into plain text.
+    """
+    return ''.join(
+        MORSE_CODE_REVERSE.get(symbol, '') if symbol != '/' else ' '
+        for symbol in code.split(' ')
+    )
