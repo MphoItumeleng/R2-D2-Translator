@@ -1,5 +1,3 @@
-# morse_translator.py
-
 # Dictionary for encoding
 MORSE_CODE_DICT = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
